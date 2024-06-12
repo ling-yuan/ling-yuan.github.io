@@ -1,0 +1,108 @@
+/* 更改网页字体 */
+@font-face {
+    font-family: 'PFanHuTuTi';
+    src: url('../fonts/PFanHuTuTi.ttf');
+}
+
+#menu {
+    /**/
+    position: fixed !important;
+    z-index: 100;
+    padding: 2.7%;
+}
+
+/*设置让class为list的ul默认隐藏起来，并且在网页上不占位*/
+.menulist {
+    margin-top: 1%;
+    display: none;
+    /* text-indent: 100px; */
+}
+
+.menulist li {
+    margin-top: 1%;
+    list-style: none;
+}
+
+.menulist li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu:hover .menulist {
+    display: block;
+}
+
+.maintitle {
+    font-family: 'PFanHuTuTi';
+    text-align: left;
+    font-size: 1.6em;
+}
+
+.btn_sele {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f4f4f4;
+    /* 放在子元素上，和上面那个父元素一伙的 */
+    scroll-snap-align: center;
+}
+
+.backg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+    background-image: url('../img/背景.png');
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    background-size: 55%;
+}
+
+.backg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-image: url('../img/毛笔墨迹.png');
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    /* background-position: center; */
+    background-position: 45% 47%;
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    background-size: 70%;
+}
+
+.backg3 {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 100%;
+    height: 110%;
+    opacity: 1;
+    background-image: url('../img/电视机.png');
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    background-size: 100%;
+}
